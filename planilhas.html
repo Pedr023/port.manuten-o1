@@ -12,41 +12,9 @@
 <style>
 
 body{
+    background: linear-gradient(180deg,#f5f6f8,#e9edf2);
     min-height:100vh;
     font-family:'Segoe UI',sans-serif;
-     background:hsla(0, 3%, 80%, 0.575);
-    position:relative;
-    overflow-x:hidden;
-}
-
-/* Faixa vermelha lateral */
-body::before{
-    content:"";
-    position:fixed;
-    top:0;
-    right:-120px;
-    width:250px;
-    height:100%;
-    background:#e30613;
-    transform:skewX(-30deg);
-    z-index:-2;
-}
-
-/* Formas geométricas */
-body::after{
-    content:"";
-    position:fixed;
-    top:0;
-    right:200px;
-    width:800px;
-    height:100%;
-    background:linear-gradient(
-        135deg,
-        rgba(255,255,255,0.7),
-        rgba(220,220,220,0.2)
-    );
-    clip-path:polygon(35% 0,100% 0,65% 100%,0 100%);
-    z-index:-1;
 }
 
 .hero{
